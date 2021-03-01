@@ -4,9 +4,6 @@ UI Component. Simple horizontal divider with title for android.
 
 ## Sample
 <img  src="./samples/preview1.png">
-  
-<br>
-<br>
 
 ## Implementation
 **Step 1:** Add to project level build.gradle
