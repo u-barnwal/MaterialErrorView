@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="ErrorBox">
+    <attr name="eb_icon" format="reference" />
+    <attr name="eb_message" format="string" />
+    <attr name="eb_action" format="string" />
+  </declare-styleable>
+
+</resources>
