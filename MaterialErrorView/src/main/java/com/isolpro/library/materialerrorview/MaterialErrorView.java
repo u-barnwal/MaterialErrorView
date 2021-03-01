@@ -49,6 +49,7 @@ public class MaterialErrorView extends RelativeLayout {
 
     try {
       setIcon(typedArray.getDrawable(R.styleable.ErrorBox_eb_icon));
+      setShowIcon(typedArray.getBoolean(R.styleable.ErrorBox_eb_show_icon, true));
       setMessage(typedArray.getString(R.styleable.ErrorBox_eb_message));
       setActionText(typedArray.getString(R.styleable.ErrorBox_eb_action));
     } finally {
@@ -72,12 +73,12 @@ public class MaterialErrorView extends RelativeLayout {
   }
 
   public void setIcon(Drawable drawable) {
-    if (drawable == null) {
-      binding.ebIcon.setVisibility(View.GONE);
-      return;
-    }
-
     binding.ebIcon.setImageDrawable(drawable);
+  }
+
+  public void setShowIcon(boolean toShow) {
+    if (toShow) binding.ebIcon.setVisibility(View.VISIBLE);
+    else binding.ebIcon.setVisibility(View.GONE);
   }
 
   public void setMessage(String message) {

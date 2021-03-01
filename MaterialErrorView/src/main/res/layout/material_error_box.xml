@@ -26,7 +26,7 @@
 
   <Button
     android:id="@+id/ebAction"
-    style="@style/Widget.MaterialComponents.Button.TextButton"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/s_x_small"
