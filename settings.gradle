@@ -1,2 +1,3 @@
+include ':MaterialErrorView'
 include ':app'
 rootProject.name = "MaterialErrorViewLibrary"
